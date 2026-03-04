@@ -5,7 +5,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border-amber-600">
+    <div>
       <div className="navbar pt-3 w-full lg:w-302 mx-auto px-4 lg:px-0 ">
         {/* Logo */}
         <div className="flex-1">
@@ -38,21 +38,21 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-
       {/* Mobile Menu */}
       <div
         className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          open ? "max-h-96 py-4 " : "max-h-0"
+          open ? "max-h-96 py-4" : "max-h-0"
         }`}
       >
-        <div className="px-4 space-y-3 ml-5">
+        <div className="px-4 space-y-3 text-center flex flex-col items-center">
           <div>Home</div>
           <div>FAQ</div>
           <div>Changelog</div>
           <div>Blog</div>
           <div>Download</div>
           <div>Contact</div>
-          <button className="bg-[#422AD5] w-32 h-8 px-3 py-1 rounded-sm text-sm text-white cursor-pointer">
+
+          <button className="bg-[#422AD5] w-32 h-8 rounded-sm text-sm text-white cursor-pointer">
             + New Ticket
           </button>
         </div>
