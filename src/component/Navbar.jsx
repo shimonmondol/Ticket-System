@@ -2,10 +2,10 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="w-[1200px] mx-auto">
-      <div className="navbar mt-3">
+    <div>
+      <div className="navbar pt-3 w-[1210px] mx-auto">
         <div className="flex-1">
-          <a className="font-bold text-lg">CS-Ticket System</a>
+          <a className="font-bold text-lg">CS — Ticket System</a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 gap-6 mt-1">
@@ -16,7 +16,9 @@ const Navbar = () => {
             <li>Download</li>
             <li>Contact</li>
           </ul>
-          <button className="bg-[#422AD5] px-3 py-1 ml-6 rounded-sm text-sm text-white cursor-pointer">+  New Ticket</button>
+          <button className="bg-[#422AD5] px-3 py-1 ml-6 rounded-sm text-sm text-white cursor-pointer">
+            + New Ticket
+          </button>
         </div>
       </div>
     </div>
