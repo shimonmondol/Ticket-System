@@ -6,66 +6,70 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-950 h-[340px]">
-      <footer className="footer sm:footer-horizontal  text-white p-10 justify-around">
-        <div>
+    <div className="bg-gray-950 overflow-hidden h-150 lg:h-80">
+      <footer className="footer grid grid-cols-2 lg:flex text-white p-10 gap-8 lg:justify-around">
+        {/* Section 1 */}
+        <div className="col-span-2 lg:col-span-1">
           <h1 className="font-bold text-lg">CS — Ticket System</h1>
-          <p className="w-[240px] text-[#A1A1AA]">
+          <p className="w-108 lg:w-60 text-[#A1A1AA] leading-6">
             The Ticket Management System is a simple web-based application
-            designed to manage customer support tickets efficiently. It allows
-            users to view, track, and update ticket statuses in an organized
-            way.
+            designed to manage customer support tickets efficiently.It allows
+            users to view, track, and update ticket.
           </p>
         </div>
-        <nav className="mt-1 text-[#A1A1AA]">
+
+        {/* Other Sections */}
+        <nav className="text-[#A1A1AA]">
           <h1 className="font-bold text-lg text-white">Company</h1>
           <a className="link link-hover no-underline">About Us</a>
           <a className="link link-hover no-underline">Our Mission</a>
-          <a className="link link-hover no-underline">Contact Saled</a>
+          <a className="link link-hover no-underline">Contact Sales</a>
         </nav>
-        <nav className="mt-1 text-[#A1A1AA]">
+
+        <nav className="text-[#A1A1AA]">
           <h1 className="font-bold text-lg text-white">Services</h1>
           <a className="link link-hover no-underline">Products & Services</a>
           <a className="link link-hover no-underline">Customer Stories</a>
           <a className="link link-hover no-underline">Download Apps</a>
         </nav>
-        <nav className="mt-1 text-[#A1A1AA]">
-          <h1 className="font-bold text-lg text-white">Infomation</h1>
+        <nav className="text-[#A1A1AA]">
+          <h1 className="font-bold text-lg text-white">Information</h1>
           <a className="link link-hover no-underline">Privacy Policy</a>
           <a className="link link-hover no-underline">Terms & Conditions</a>
           <a className="link link-hover no-underline">Join Us</a>
         </nav>
-        <nav className="mt-1 text-[#A1A1AA]">
+        <nav className="text-[#A1A1AA]">
           <h1 className="font-bold text-lg text-white">Social Links</h1>
-          <a className="link link-hover no-underline flex">
+          <a className="flex items-center gap-2">
             <div className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
-              <FaXTwitter className="text-black" />
+              <FaXTwitter className="text-black text-xs" />
             </div>
-            <h1 className="ml-2">@CS — Ticket System</h1>
+            @CS — Ticket System
           </a>
-          <a className="link link-hover no-underline flex">
+          <a className="flex items-center gap-2">
             <div className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
-              <FaLinkedinIn className="text-black" />
+              <FaLinkedinIn className="text-black text-xs" />
             </div>
-            <h1 className="ml-2">@CS — Ticket System</h1>
+            @CS — Ticket System
           </a>
-          <a className="link link-hover no-underline flex">
+          <a className="flex items-center gap-2">
             <div className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
-              <FaFacebookF className="text-black" />
+              <FaFacebookF className="text-black text-xs" />
             </div>
-            <h1 className="ml-2">@CS — Ticket System</h1>
+            @CS — Ticket System
           </a>
-          <a className="link link-hover no-underline flex">
+          <a className="flex items-center gap-2">
             <div className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
-              <MdEmail className="text-black" />
+              <MdEmail className="text-black text-xs" />
             </div>
-            <h1 className="ml-2">support@cst.com</h1>
+            support@cst.com
           </a>
         </nav>
       </footer>
-      <div className="h-[1px] w-[1190px] mx-auto bg-[#A1A1AA] my-6"></div>
-      <p className="text-[#A1A1AA] text-center">
-        © 2025 CS — Ticket System. All rights reserved.
+      <div className="h-px w-100 lg:w-300 mx-auto bg-[#A1A1AA]"></div>
+      <p className="text-[#A1A1AA] text-center mt-6">
+        {" "}
+        © 2025 CS — Ticket System. All rights reserved.{" "}
       </p>
     </div>
   );
