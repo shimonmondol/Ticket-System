@@ -16,7 +16,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-6">
-          <ul className="menu menu-horizontal gap-6">
+          <ul className="menu menu-horizontal gap-6 cursor-pointer">
             <li>Home</li>
             <li>FAQ</li>
             <li>Changelog</li>
@@ -24,7 +24,7 @@ const Navbar = () => {
             <li>Download</li>
             <li>Contact</li>
           </ul>
-          <button className="bg-[#422AD5] px-3 py-1 rounded-sm text-sm text-white">
+          <button className="bg-[#422AD5] px-3 py-1 rounded-sm text-sm text-white cursor-pointer">
             + New Ticket
           </button>
         </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
           open ? "max-h-96 py-4" : "max-h-0"
         }`}
       >
-        <div className="px-4 space-y-3 text-center flex flex-col items-center">
+        <div className="px-4 space-y-3 text-center flex flex-col items-center cursor-pointer">
           <div>Home</div>
           <div>FAQ</div>
           <div>Changelog</div>
