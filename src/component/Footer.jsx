@@ -69,7 +69,7 @@ const Footer = () => {
       <div className="h-px w-100 lg:w-300 mx-auto bg-[#A1A1AA]"></div>
       <p className="text-[#A1A1AA] text-center mt-6">
         {" "}
-        © 2025 CS — Ticket System. All rights reserved.{" "}
+        © 2026 CS — Ticket System. All rights reserved.{" "}
       </p>
     </div>
   );

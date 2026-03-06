@@ -19,10 +19,13 @@ const Banner = () => {
   };
 
   const handleComplete = (task) => {
-    setResolvedTask([...resolvedTask, task]);
+    setResolvedTask((prev) => {
+      if (prev.some((t) => t.id === task.id)) return prev;
+      return [...prev, task];
+    });
     toast.success("Resolved Task Successfully");
-    const remaining = taskStatus.filter((t) => t.id !== task.id);
-    setTaskStatus(remaining);
+    setTaskStatus((prev) => prev.filter((t) => t.id !== task.id));
+    setTickets((prev) => prev.filter((t) => t.id !== task.id));
   };
 
   useEffect(() => {
