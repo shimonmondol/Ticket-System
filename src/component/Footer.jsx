@@ -6,12 +6,12 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-950 overflow-hidden h-150 lg:h-80">
+    <div className="bg-gray-950 overflow-hidden h-170 lg:h-80">
       <footer className="footer grid grid-cols-2 lg:flex text-white p-10 gap-8 lg:justify-around">
         {/* Section 1 */}
         <div className="col-span-2 lg:col-span-1">
           <h1 className="font-bold text-lg">CS — Ticket System</h1>
-          <p className="w-108 lg:w-60 text-[#A1A1AA] leading-6">
+          <p className="w-86 lg:w-60 text-[#A1A1AA] leading-6">
             The Ticket Management System is a simple web-based application
             designed to manage customer support tickets efficiently.It allows
             users to view, track, and update ticket.
@@ -66,10 +66,9 @@ const Footer = () => {
           </a>
         </nav>
       </footer>
-      <div className="h-px w-100 lg:w-300 mx-auto bg-[#A1A1AA]"></div>
+      <div className="h-px w-86 lg:w-300 mx-auto bg-[#A1A1AA]"></div>
       <p className="text-[#A1A1AA] text-center mt-6">
-        {" "}
-        © 2026 CS — Ticket System. All rights reserved.{" "}
+        © 2026 CS — Ticket System. All rights reserved.
       </p>
     </div>
   );

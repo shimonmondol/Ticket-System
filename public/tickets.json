@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Login Issues - Can't Access Account",
+    "title": "Login Issues - Can't Access",
     "description": "Customer is unable to log in to their account. They've tried resetting their password.",
     "customer": "Abdul Rahim",
     "priority": "High Priority",

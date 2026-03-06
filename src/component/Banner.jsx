@@ -40,14 +40,14 @@ const Banner = () => {
       <div className="overflow-hidden bg-[#F5F5F5] pt-12 min-h-screen lg:min-h-screen">
         <div className="w-302 mx-auto flex flex-col lg:flex-row text-white">
           {/* In Progress */}
-          <div className="bg-linear-to-r from-purple-500 to-purple-700 w-124 lg:w-1/2 h-60 flex justify-center items-center">
+          <div className="bg-linear-to-r from-purple-500 to-purple-700 w-103 lg:w-1/2 h-60 flex justify-center items-center">
             <div className="text-center text-xl">
               <h1>In-Progress</h1>
               <h2>{taskStatus.length}</h2>
             </div>
           </div>
           {/* Resolved */}
-          <div className="bg-linear-to-r from-green-300 to-green-600 w-124 lg:w-1/2 h-60 flex justify-center items-center">
+          <div className="bg-linear-to-r from-green-300 to-green-600 w-103 lg:w-1/2 h-60 flex justify-center items-center">
             <div className="text-center text-xl">
               <h1>Resolved</h1>
               <h2>{resolvedTask.length}</h2>
