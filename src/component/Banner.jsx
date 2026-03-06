@@ -57,7 +57,7 @@ const Banner = () => {
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {/* Ticket Cards (2 column) */}
-            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 mb-0 lg:mb-20">
+            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 mb-0 lg:mb-20 mr-8 lg:mr-0">
               {tickets.map((ticket) => (
                 <div
                   key={ticket.id}
@@ -68,7 +68,6 @@ const Banner = () => {
                     <h2 className="font-semibold text-[#001931]">
                       {ticket.title}
                     </h2>
-
                     <h3
                       className={
                         ticket.status === "Open"
@@ -81,7 +80,6 @@ const Banner = () => {
                       {ticket.status}
                     </h3>
                   </div>
-
                   <p className="text-gray-500 mt-3">{ticket.description}</p>
                   <div className="flex mt-3 gap-4 flex-wrap">
                     <p className="text-gray-500">{ticket.code}</p>
@@ -107,7 +105,7 @@ const Banner = () => {
             {/* Task & Resolved Column */}
             <div>
               {/* Task Status Column */}
-              <div className="p-4">
+              <div className="lg:p-4 mt-6 lg:mt-0">
                 <h2 className="font-bold text-[#34485A] text-2xl mb-3">
                   Task Status
                 </h2>
@@ -136,7 +134,7 @@ const Banner = () => {
                 )}
               </div>
               {/* Resolved Task Column */}
-              <div className="p-4 mb-10 lg:mb-0">
+              <div className="lg:p-4 lg:mt-0 mt-6 mb-10 lg:mb-0">
                 <h2 className="font-bold text-[#34485A] text-2xl mb-3">
                   Resolved Task
                 </h2>
